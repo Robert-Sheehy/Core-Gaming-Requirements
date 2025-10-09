@@ -129,6 +129,7 @@ GameObject:
   m_Component:
   - component: {fileID: 72006276}
   - component: {fileID: 72006277}
+  - component: {fileID: 72006278}
   m_Layer: 5
   m_Name: Slider
   m_TagString: Untagged
@@ -176,14 +177,14 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 0
+  m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0.020617247, g: 1, b: 0, a: 1}
-    m_HighlightedColor: {r: 0.048891068, g: 1, b: 0, a: 1}
-    m_PressedColor: {r: 0.11273074, g: 1, b: 0, a: 1}
-    m_SelectedColor: {r: 0.13462639, g: 1, b: 0.0141509175, a: 1}
-    m_DisabledColor: {r: 0.08960724, g: 1, b: 0, a: 0.5019608}
-    m_ColorMultiplier: 1
+    m_NormalColor: {r: 0.23584908, g: 0.15908688, b: 0.16292116, a: 1}
+    m_HighlightedColor: {r: 0.23921569, g: 0.16078432, b: 0.16470589, a: 1}
+    m_PressedColor: {r: 0.23921569, g: 0.16078432, b: 0.16470589, a: 1}
+    m_SelectedColor: {r: 0.23921569, g: 0.16078432, b: 0.16470589, a: 1}
+    m_DisabledColor: {r: 0.23921569, g: 0.16078432, b: 0.16470589, a: 0.5019608}
+    m_ColorMultiplier: 5
     m_FadeDuration: 0.1
   m_SpriteState:
     m_HighlightedSprite: {fileID: 0}
@@ -204,10 +205,24 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 100
   m_WholeNumbers: 0
-  m_Value: 59
+  m_Value: 100
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &72006278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 72006275}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d78b36a027ccfbc4f9277048afec326c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FillImage: {fileID: 1245133506}
+  slider: {fileID: 0}
 --- !u!1 &150388452
 GameObject:
   m_ObjectHideFlags: 0
@@ -377,6 +392,7 @@ GameObject:
   - component: {fileID: 440767249}
   - component: {fileID: 440767248}
   - component: {fileID: 440767251}
+  - component: {fileID: 440767252}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -502,6 +518,20 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
+--- !u!114 &440767252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 440767247}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d78b36a027ccfbc4f9277048afec326c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FillImage: {fileID: 1245133506}
+  slider: {fileID: 72006277}
 --- !u!1 &1048546702
 GameObject:
   m_ObjectHideFlags: 0
@@ -627,14 +657,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.86274517, g: 0.86274517, b: 0.86274517, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 10911, guid: 0000000000000000f000000000000000, type: 0}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
